@@ -10,6 +10,7 @@ int main(int argc, char **argv) {
               << "  dll_path     path to the dll to inject\n"
               << "  pid          pid of the process to inject the dll to\n"
               << '\n';
+    std::exit(1);
   }
   const std::string dll_path{argv[1]};
   const int pid{std::stoi(argv[2])};
